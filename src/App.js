@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import ContainerDaysLeft from './components/ContainerDaysLeft'
+import Counter from './components/Counter'
+import './styles/components/app.sass'
 
+import useCountdown from './hooks/useCountdown';
 function App() {
+  const [day,hour,minute,second] = useCountdown("Jul 28, 2023 08:30:00");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id='principal'>
+      <h2>Trip to Brasilia </h2>
+      <ContainerDaysLeft dias={day} />
+      <Counter title="horas" number={hour}/>
+      <Counter title="minutos" number={minute}/>
+      <Counter title="segundos" number={second}/>
+
     </div>
   );
 }
