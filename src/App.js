@@ -7,11 +7,11 @@ function App() {
   const [day,hour,minute,second] = useCountdown("Jul 28, 2023 08:30:00");
   return (
     <div id='principal'>
-      <h2>Trip to Brasilia </h2>
+      <h2>&#10024; Trip to Brasilia &#10024;</h2>
       <ContainerDaysLeft dias={day} />
-      <Counter title="horas" number={hour}/>
-      <Counter title="minutos" number={minute}/>
-      <Counter title="segundos" number={second}/>
+      <Counter title="hours" number={hour}/>
+      <Counter title="minutes" number={minute}/>
+      <Counter title="seconds" number={second}/>
 
     </div>
   );
