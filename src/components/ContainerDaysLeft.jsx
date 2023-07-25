@@ -7,7 +7,7 @@ const ContainerDaysLeft = (props) => {
                 <div className="top-calendar">
                     <h2>Days Left</h2>
                 </div>
-                <h2 id='dias'>{props.dias || "?!"}</h2>
+                <h2 id='dias'>{props.dias || "0"}</h2>
             </div>
         </div>
     )
