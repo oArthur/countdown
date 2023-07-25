@@ -3,7 +3,7 @@ const Counter = ({title, number}) =>{
 
     return(
         <div className='counter'>
-            <p className='counter-number'>{number || "00"}</p>
+            <p className='counter-number'>{number || "0"}</p>
             <h3 className='counter-text'>{title || "!"}</h3>
         </div>
     )
