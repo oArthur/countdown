@@ -5,7 +5,7 @@ import './styles/components/app.sass'
 
 import useCountdown from './hooks/useCountdown';
 function App() {
-  const [day,hour,minute,second] = useCountdown("Jul 28, 2023 08:30:00");
+  const [day,hour,minute,second] = useCountdown("Set 07, 2023 08:00:00");
   return (
     <>
       <div id='principal'>
