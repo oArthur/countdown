@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <div id='principal'>
-        <h2><Fireworks/> Trip to BSB/Chapada 🦎🦎🦎</h2>
+        <h2><Fireworks/> Trip to Chapada 🦎🦎🦎</h2>
         <ContainerDaysLeft dias={day} />
         <Counter title="hours" number={hour}/>
         <Counter title="minutes" number={minute}/>
