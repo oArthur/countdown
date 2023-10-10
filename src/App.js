@@ -5,11 +5,11 @@ import './styles/components/app.sass'
 
 import useCountdown from './hooks/useCountdown';
 function App() {
-  const [day,hour,minute,second] = useCountdown("Oct 06, 2023 06:30:00");
+  const [day,hour,minute,second] = useCountdown("Oct 19, 2023 23:30:00");
   return (
     <>
       <div id='principal'>
-        <h2><Fireworks/> Trip to BSB &#10024;</h2>
+        <h2><Fireworks/> Trip to BSB/Chapada 🦎🦎🦎</h2>
         <ContainerDaysLeft dias={day} />
         <Counter title="hours" number={hour}/>
         <Counter title="minutes" number={minute}/>
